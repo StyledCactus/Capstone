@@ -1,10 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Header';
+import Nav from './Nav';
+import Footer from './Footer';
+import Main from './Main';
 
+
+console.log("working");
 function App() {
   return (
-    <div>
-    </div>
+    <>
+        <Header />
+        <Nav />
+        <Main />
+        <Footer />
+
+    </>
   );
 }
 

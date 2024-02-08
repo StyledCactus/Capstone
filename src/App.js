@@ -1,9 +1,12 @@
 import './App.css';
 import Header from './Header';
 import Nav from './Nav';
-import Footer from './Footer';
+import Salad from './Salad';
 import Main from './Main';
-
+import Brushetta from './Brushetta';
+import Grilled from './GrilledFish';
+import Pasta from './Pasta';
+import Lemon from './LemonDessert';
 
 console.log("working");
 function App() {
@@ -12,8 +15,11 @@ function App() {
         <Header />
         <Nav />
         <Main />
-        <Footer />
-
+        <Salad />
+        <Brushetta />
+        <Grilled />
+        <Pasta />
+        <Lemon />
     </>
   );
 }

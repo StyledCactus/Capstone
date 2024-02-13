@@ -27,12 +27,12 @@
 .App-link {
   color: #61dafb;
 }
+
 .header{
   background-color: white;
   padding: 40px 40px;
   position: relative;
 }
-
 .Menu{
   width : 3%;
   height: 100%;
@@ -47,11 +47,11 @@
   top: 20%
 }
 .Basket{
-  height: 83%;
+  height: 80%;
   position: absolute;
   left: 95%;
   top: 10%;
-  height: 100%;
+  height: 80%;
 }
 .headerButtonOne{
   border: none;
@@ -160,12 +160,14 @@ min-width: 200px;
   font-weight: bold;
   position: absolute;
   bottom: 33%;
+  left: 45px;
 }
 .SaladDesc{
   font-weight: normal;
   position: absolute;
   bottom: 24.5%;
   color: rgb(0, 80, 0);
+  left: 45px;
   width: 70%;
 }
 .SaladImg{
@@ -179,6 +181,7 @@ min-width: 200px;
   font-weight: bold;
   bottom: 19%;
   color: rgb(0, 80, 0);
+  left: 45px;
 }
 .line{
   width: 95%;
@@ -193,6 +196,7 @@ min-width: 200px;
 .brushNm{
   position: absolute;
   bottom: 10%;
+  left: 45px;
 }
 .brushDesc{
   font-weight: normal;
@@ -200,6 +204,7 @@ min-width: 200px;
   top: 860px;
   color: rgb(0, 80, 0);
   width: 70%;
+  left: 45px;
 }
 .brushImg{
   top: 820px;
@@ -212,6 +217,7 @@ min-width: 200px;
   font-weight: bold;
   top: 990px;
   color: rgb(0, 80, 0);
+  left: 45px;
 }
 .lineTwo{
   width: 95%;
@@ -226,6 +232,7 @@ min-width: 200px;
 .GrilledFishNm{
   position: absolute;
   top: 110%;
+  left: 45px;
 }
 .GrilledFishDesc{
   font-weight: normal;
@@ -233,12 +240,14 @@ min-width: 200px;
   top: 1120px;
   color: rgb(0, 80, 0);
   width: 70%;
+  left: 45px;
 }
 .GrilledFishPrice{
   position: absolute;
   font-weight: bold;
   top: 129%;
   color: rgb(0, 80, 0);
+  left: 45px;
 }
 .lineThree{
   width: 95%;
@@ -259,6 +268,7 @@ min-width: 200px;
 .PastaNm{
   position: absolute;
   top: 136%;
+  left: 45px;
 }
 .PastaDesc{
   font-weight: normal;
@@ -266,6 +276,7 @@ min-width: 200px;
   top: 142%;
   color: rgb(0, 80, 0);
   width: 70%;
+  left: 45px;
 }
 .PastaImg{
   top: 137%;
@@ -278,6 +289,7 @@ min-width: 200px;
   font-weight: bold;
   top: 155%;
   color: rgb(0, 80, 0);
+  left: 45px;
 }
 .lineFour{
   width: 95%;
@@ -291,6 +303,7 @@ min-width: 200px;
 }
 .LemonNm{
   position: absolute;
+  left: 45px;
   top: 163%;
 }
 .LemonDesc{
@@ -299,12 +312,14 @@ min-width: 200px;
   top: 169%;
   color: rgb(0, 80, 0);
   width: 70%;
+  left: 45px;
 }
 .LemonPrice{
   position: absolute;
   font-weight: bold;
   top: 182.5%;
   color: rgb(0, 80, 0);
+  left: 45px;
 }
 .LemonImg{
   top: 164%;
@@ -322,7 +337,44 @@ min-width: 200px;
   left: 2%;
   position: absolute;
 }
-
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 4;
+}
+.cart{
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  right: 0%;
+  z-index: 5;
+  height: 2000%;
+  width: 15%;
+  top: 0%;
+  border: 1px solid black;
+}
+.headerCart{
+  background-color: rgb(0, 80, 0);
+  position: relative;
+  width: 100%;
+  height: .3%;
+}
+.cartText{
+  color: white;
+  bottom: 1%;
+  left: 40%;
+  position: absolute;
+}
+.CartBasket{
+  left: 26%;
+  bottom: 40%;
+  position: absolute;
+  width: 12%;
+  height: 60%;
+}
 @media (max-width: 768px) {
   .firstImg{
     bottom: 57%;

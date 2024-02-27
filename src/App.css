@@ -31,8 +31,16 @@
 .header{
   background-color: white;
   padding: 40px 40px;
-  position: relative;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 96%;
+  border: 3px solid;
+  border-color: rgb(59, 102, 78);;
+  border-image: linear-gradient(rgb(59, 102, 78);), #000);
+  border-image-slice: 1;
 }
+
 .Menu{
   width : 3%;
   height: 100%;
@@ -98,19 +106,18 @@
 .firstImg{
 position: absolute;
 left: 80%;
-width: 12%;
-bottom: 64.6%;
+width: 10%;
+bottom: 69.2%;
 height: auto;
 overflow: hidden;
-min-width: 200px;
 }
 .devliv{
   left: 10%;
-  top: 45%;
+  top: 35%;
   position: absolute;
 }
 .mainbut{
-  top: 56%;
+  top: 46%;
   position: absolute;
   display: flex;
   align-items: center;
@@ -159,13 +166,13 @@ min-width: 200px;
 .SaladNm{
   font-weight: bold;
   position: absolute;
-  bottom: 33%;
+  bottom: 40%;
   left: 45px;
 }
 .SaladDesc{
   font-weight: normal;
   position: absolute;
-  bottom: 24.5%;
+  bottom: 30%;
   color: rgb(0, 80, 0);
   left: 45px;
   width: 70%;
@@ -174,12 +181,12 @@ min-width: 200px;
   position: absolute;
   width: 12%;
   left: 80%;
-  bottom: 19%;
+  bottom: 22%;
 }
 .SaladPrice{
   position: absolute;
   font-weight: bold;
-  bottom: 19%;
+  bottom: 23%;
   color: rgb(0, 80, 0);
   left: 45px;
 }
@@ -189,25 +196,25 @@ min-width: 200px;
   background-color: rgb(192, 192, 192);
   margin: 20px 0;
   opacity: 0.5;
-  bottom: 15%;
+  bottom: 18%;
   left: 2%;
   position: absolute;
 }
 .brushNm{
   position: absolute;
-  bottom: 10%;
+  bottom: 12%;
   left: 45px;
 }
 .brushDesc{
   font-weight: normal;
   position: absolute;
-  top: 860px;
+  top: 835px;
   color: rgb(0, 80, 0);
   width: 70%;
   left: 45px;
 }
 .brushImg{
-  top: 820px;
+  top: 789px;
   position: absolute;
   width: 12%;
   left: 80%;
@@ -215,7 +222,7 @@ min-width: 200px;
 .brushPrice{
   position: absolute;
   font-weight: bold;
-  top: 990px;
+  top: 960px;
   color: rgb(0, 80, 0);
   left: 45px;
 }
@@ -225,19 +232,19 @@ min-width: 200px;
   background-color: rgb(192, 192, 192);
   margin: 20px 0;
   opacity: 0.5;
-  top: 1038px;
+  top: 1007px;
   left: 2%;
   position: absolute;
 }
 .GrilledFishNm{
   position: absolute;
-  top: 110%;
+  top: 108%;
   left: 45px;
 }
 .GrilledFishDesc{
   font-weight: normal;
   position: absolute;
-  top: 1120px;
+  top: 1097px;
   color: rgb(0, 80, 0);
   width: 70%;
   left: 45px;
@@ -245,7 +252,7 @@ min-width: 200px;
 .GrilledFishPrice{
   position: absolute;
   font-weight: bold;
-  top: 129%;
+  top: 126%;
   color: rgb(0, 80, 0);
   left: 45px;
 }
@@ -255,31 +262,31 @@ min-width: 200px;
   background-color: rgb(192, 192, 192);
   margin: 20px 0;
   opacity: 0.5;
-  top: 1290px;
+  top: 1267px;
   left: 2%;
   position: absolute;
 }
 .GrilledFishImg{
-  top: 1075px;
+  top: 1050px;
   position: absolute;
   width: 12%;
   left: 80%;
 }
 .PastaNm{
   position: absolute;
-  top: 136%;
+  top: 1299px;
   left: 45px;
 }
 .PastaDesc{
   font-weight: normal;
   position: absolute;
-  top: 142%;
+  top: 1350px;
   color: rgb(0, 80, 0);
   width: 70%;
   left: 45px;
 }
 .PastaImg{
-  top: 137%;
+  top: 1310px;
   position: absolute;
   width: 12%;
   left: 80%;
@@ -287,7 +294,7 @@ min-width: 200px;
 .PastaPrice{
   position: absolute;
   font-weight: bold;
-  top: 155%;
+  top: 1470px;
   color: rgb(0, 80, 0);
   left: 45px;
 }
@@ -297,19 +304,19 @@ min-width: 200px;
   background-color: rgb(192, 192, 192);
   margin: 20px 0;
   opacity: 0.5;
-  top: 160%;
+  top: 1535px;
   left: 2%;
   position: absolute;
 }
 .LemonNm{
   position: absolute;
   left: 45px;
-  top: 163%;
+  top: 1570px;
 }
 .LemonDesc{
   font-weight: normal;
   position: absolute;
-  top: 169%;
+  top: 1620px;
   color: rgb(0, 80, 0);
   width: 70%;
   left: 45px;
@@ -317,12 +324,12 @@ min-width: 200px;
 .LemonPrice{
   position: absolute;
   font-weight: bold;
-  top: 182.5%;
+  top: 1750px;
   color: rgb(0, 80, 0);
   left: 45px;
 }
 .LemonImg{
-  top: 164%;
+  top: 1582px;
   position: absolute;
   width: 12%;
   left: 80%;
@@ -374,6 +381,288 @@ min-width: 200px;
   position: absolute;
   width: 12%;
   height: 60%;
+}
+.BookNav{
+  background-color: rgb(59, 102, 78);
+  color:white;
+  padding: 2% 2%;
+  width: 96%;
+  position: relative;
+  top: 100px;
+}
+.nameTwo{
+  color: rgb(224, 191, 0);
+  font-family: Karla;
+  font-size: 50px;
+  position: relative;
+}
+.bookNavDesc{
+  color: white;
+  font-family: Karla;
+}
+.ReserveTxt{
+  top: 373px;
+  left: 100px;
+  position: absolute;
+}
+.lineSix{
+  width: 95%;
+  height: 2px;
+  background-color: rgb(192, 192, 192);
+  margin: 20px 0;
+  opacity: 0.5;
+  top: 450px;
+  left: 2%;
+  position: absolute;
+}
+.Date{
+  top: 490px;
+  left: 50px;
+  position: absolute;
+  font-weight: normal;
+}
+.DateBut{
+  background-color: rgb(219, 219, 219);
+  border-radius: 29px;
+  position: absolute;
+  top: 305px;
+  left: 50px;
+  width: 510px;
+  height: 40px;
+}
+.TimeOne{
+  background-color: rgb(219, 219, 219);
+  border-radius: 29px;
+  position: absolute;
+  top: 284px;
+  left: 810px;
+  width: 510px;
+  height: 40px;
+}
+.TimeTwo{
+  border-radius: 29px;
+  position: absolute;
+  top: 705px;
+  left: 950px;
+  width: 510px;
+  height: 40px;
+}
+.Time{
+  top: 490px;
+  left: 810px;
+  position: absolute;
+  font-weight: normal;
+}
+.diners{
+  top: 658px;
+  left: 300px;
+  position: absolute;
+  font-weight: normal;
+}
+.adults{
+  position: absolute;
+  top: 750px;
+  font-weight: normal;
+  left: 400px;
+}
+.lineSeven{
+  width: 95%;
+  height: 2px;
+  background-color: rgb(192, 192, 192);
+  margin: 20px 0;
+  opacity: 0.5;
+  top: 830px;
+  left: 2%;
+  position: absolute;
+}
+.tod{
+  position: absolute;
+  top: 876px;
+  font-weight: normal;
+  left: 410px;
+}
+
+.dinerSlid{
+  background-color: rgb(192, 192, 192);;
+  top: 755px;
+  left: 52%;
+  width: 20%;
+  height: 7%;
+  border-radius: 15px;
+  position: absolute;
+}
+.MinusOne{
+  top: 15%;
+  left: 13%;
+  width: 20%;
+  height: 70%;
+  position: absolute;
+}
+.ValueOne{
+  position: absolute;
+  font-size: 50px;
+  left: 45%;
+  margin: auto;
+  place-items: center;
+}
+.PlusOne{
+  top: 15%;
+  left: 65%;
+  width: 20%;
+  height: 70%;
+  position: absolute;
+}
+.lineEight{
+  width: 95%;
+  height: 2px;
+  background-color: rgb(192, 192, 192);
+  margin: 20px 0;
+  opacity: 0.5;
+  top: 963px;
+  left: 2%;
+  position: absolute;
+}
+.dinerSlidTwo{
+  background-color: rgb(192, 192, 192);;
+  top: 884px;
+  left: 52%;
+  width: 20%;
+  height: 7%;
+  border-radius: 15px;
+  position: absolute;
+}
+.babies{
+  position: absolute;
+  top: 1010px;
+  font-weight: normal;
+  left: 420px;
+}
+.todSlid{
+  top: 1141px;
+  left: 52%;
+  width: 20%;
+  height: 4%;
+  border-radius: 20px;
+  position: absolute;
+}
+.lineNine{
+  width: 95%;
+  height: 2px;
+  background-color: rgb(192, 192, 192);
+  margin: 20px 0;
+  opacity: 0.5;
+  top: 1101px;
+  left: 2%;
+  position: absolute;
+}
+.dinerSlidThree{
+  background-color: rgb(192, 192, 192);;
+  top: 1020px;
+  left: 52%;
+  width: 20%;
+  height: 7%;
+  border-radius: 15px;
+  position: absolute;
+}
+.babieSlid{
+  top: 1255px;
+  left: 52%;
+  width: 20%;
+  height: 4%;
+  border-radius: 20px;
+  position: absolute;
+}
+.SubmitOne{
+  top: 1155px;
+  left: 24%;
+  background-color: yellow;
+  width: 50%;
+  height: 10%;
+  border-radius: 20px;
+  position: absolute;
+  font-weight: normal;
+  font-size: 40px;
+}
+.BOTTEMLINEapp{
+  width: 95%;
+  height: 2px;
+  background-color: rgb(192, 192, 192);
+  margin: 20px 0;
+  opacity: 0;
+  top: 1901px;
+  left: 2%;
+  position: absolute;
+}
+.BOTTEMLINEbook{
+  width: 95%;
+  height: 2px;
+  background-color: rgb(192, 192, 192);
+  margin: 20px 0;
+  opacity: 0;
+  top: 1251px;
+  left: 2%;
+  position: absolute;
+}
+.Basketbook{
+  height: 80%;
+  position: absolute;
+  left: 95%;
+  top: 10%;
+  height: 80%;
+}
+.Lemonbook{
+  height: 50px;
+  position: absolute;
+  left: 43%;
+  top: 20%
+}
+.Menubook{
+  width : 3%;
+  height: 100%;
+  position: absolute;
+  left: 1%;
+  top: 5%
+}
+.AdultinCart{
+  left: 0px;
+  top: 0px;
+  background-color: rgb(224, 224, 224);
+  position: relative;
+  width: 63%;
+  font-size: 40px;
+}
+.TodinCart{
+  left: 0px;
+  top: 0px;
+  background-color: rgb(224, 224, 224);
+  position: relative;
+  width: 50%;
+  font-size: 40px;
+}
+.BabieinCart{
+  left: 0px;
+  top: 0px;
+  background-color: rgb(224, 224, 224);
+  position: relative;
+  width: 40%;
+  font-size: 40px;
+}
+.reserveDown{
+  top: 1860px;
+  left: 40%;
+  background-color: yellow;
+  width: 20%;
+  height: 4%;
+  border-radius: 20px;
+  position: absolute;
+  font-weight: bold;
+}
+.reserveDown-text{
+  color: black;
+}
+.FetchAPIone , .HandleSubmitAPI{
+  z-index: 11;
+  position: relative;
 }
 @media (max-width: 768px) {
   .firstImg{
@@ -487,5 +776,98 @@ min-width: 200px;
   .LemonPrice{
     top: 227%;
   }
+  .BookNav{
+    position: absolute;
+    width: 96.5%;
+    height: 20%;
+  }
+  .Basketbook{
+    left: 77%;
+    width: 10%;
+  }
+  .Lemonbook{
+    left: 28%;
+    top: 30%;
+  }
+  .Menubook{
+    left: 3;
+    width: 10%;
+  }
+  .nameTwo{
+    font-size: 50px;
+    position: absolute;
+    top: 1%;
+  }
+  .bookNavDesc{
+    font-size: 30px;
+    top: 50%;
+    position: absolute;
+  }
+  .ReserveTxt{
+  top: 34.5%;
+  }
+  .lineSix{
+    top: 43%;
+  }
+  .Date{
+    top: 400px;
+  }
+  .DateBut{
+  top: 480px;
+  width: 30%;
+  }
+  .Time{
+    top: 400px;
+    left: 280px;
+  }
+  .TimeOne{
+    left: 280px;
+    top: 460px;
+    width: 30%;
+  }
+  .diners{
+    top: 600px;
+    left: 20px;
+  }
+  .dinerSlid , .dinerSlidThree , .dinerSlidTwo{
+    left: 50px;
+    width: 50%;
+  }
+  .ValueOne{
+    left: 44%;
+    bottom: -3px;
+  }
+  .adults{
+    left: 69%;
+  }
+  .tod{
+    left: 66%;
+  }
+  .babies{
+    left: 70%;
+  }
+  .cart{
+    width: 50%;
+  }
+  .cartText{
+    top: -30px;
+    left: 93px;
+    font-size: 40px;
+  }
+  .CartBasket{
+    top: 10px;
+    left: 55px;
+  }
+  .closeButton{
+    top:0px;
+    position: absolute;
+    background-color: rgb(0, 80, 0);;
+    outline: none;
+    border: blue;
+    width: 50px;
+    height: 50px;
+    font-size: 35px;
+  }
+
 }
 

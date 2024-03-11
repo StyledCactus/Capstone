@@ -3,10 +3,8 @@ import Menu from './images/Menu Button.png'
 import Basket from './images/Basket.png'
 import './App.css';
 import React, {useState} from "react";
-import WhiteX from './images/WhiteX.png'
-import RedX from './images/RedX.png'
 import { Navigate, useNavigate } from 'react-router-dom';
-import App from './App';
+
 
 function Header() {
 

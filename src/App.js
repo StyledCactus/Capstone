@@ -10,7 +10,8 @@ import Lemon from './LemonDessert';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Booking from './Booking';
 import Reservesdown from './ReserveBottom';
-
+import BookNow from './BookNow';
+import BookDone from './BookDone';
 
 
 console.log("App working");
@@ -35,10 +36,14 @@ function App() {
             </>
           } />
           <Route path='/Booking' element={<Booking />} />
+          <Route path='/booknow' element={<BookNow />} />
+          <Route path='/BookDone' element={<BookDone />} />
         </Routes>
     </>
     </Router>
   );
 }
+
+
 
 export default App;

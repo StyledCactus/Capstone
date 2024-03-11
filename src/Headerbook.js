@@ -4,7 +4,6 @@ import Basket from './images/Basket.png'
 import './App.css';
 import React, {useState} from "react";
 import { Navigate, useNavigate } from 'react-router-dom';
-import Booking from './Booking';
 import { useDinersContext } from './CartNumbers';
 
 
@@ -47,9 +46,7 @@ function Headerbook() {
                 <img className='CartBasket' src={Basket}></img>
                 <button className='closeButton' onClick={closeCart}>x</button>
                 <h1 className='cartText'>Cart</h1>
-                <p className='AdultinCart'>{valueOne} Adults</p>
-                <p className='TodinCart'>{valueTwo} Teens</p>
-                <p className='BabieinCart'>{valueThree} Kids</p>
+                <p className='AdultinCart'>{valueOne} People</p>
                 </header>
             </div>
             </div>

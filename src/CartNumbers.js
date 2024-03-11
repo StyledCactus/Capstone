@@ -5,9 +5,9 @@ const DinersContext = createContext();
 export const useDinersContext = () => useContext(DinersContext);
 
 export const DinersProvider = ({ children}) => {
-    const [valueOne, setValueOne] = useState(0);
-    const [valueTwo, setValueTwo] = useState(0);
-    const [valueThree, setValueThree] = useState(0);
+    const [valueOne, setValueOne] = useState(1);
+    const [valueTwo, setValueTwo] = useState(1);
+    const [valueThree, setValueThree] = useState(1);
 
   const raiseValueOne = () => {
     setValueOne(prevValue => prevValue + 1);

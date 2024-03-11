@@ -5,6 +5,7 @@ import Dates from "./Date";
 import Diners from "./Diners";
 import { DinersProvider } from "./CartNumbers";
 
+
 console.log("Booking Working")
 
 function Booking(){
@@ -16,10 +17,11 @@ function Booking(){
     <Headerbook />
     <BookNav />
     <Reservespot />
-    <Dates />
+    {/* <Dates /> (BEING CALLED IN Diners.js*/}
     <Diners />
     <hr className='BOTTEMLINEbook'></hr>
     </>
+
     </DinersProvider>
     )
 }

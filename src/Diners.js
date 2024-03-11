@@ -1,38 +1,10 @@
-import { render, screen } from "@testing-library/react";
-import React, {useState} from "react";
-import Headerbook from "./Headerbook";
-import numberLine from "./Numberline";
+import React, { createContext, useContext, useState} from "react";
 import { useDinersContext } from "./CartNumbers";
+import { useNavigate } from "react-router-dom";
+import Dates from "./Date";
 
 function Diners(){
 
-    // const [valueOne, setValueOne] = useState(0)
-    // const [valueTwo , setValueTwo] = useState(0)
-    // const [valueThree , setValueThree] = useState(0)
-
-    // const raiseValueOne = () => {
-    //     setValueOne(prevValue => prevValue + 1);
-    // }
-
-    // const lowerValueOne = () => {
-    //     setValueOne(prevValue => Math.max(0, prevValue - 1));
-    // }
-
-    // const raiseValueTwo = () => {
-    //     setValueTwo(prevValue => prevValue + 1);
-    // }
-
-    // const lowerValueTwo = () => {
-    //     setValueTwo(prevValue => Math.max(0, prevValue - 1));
-    // }
-
-    // const raiseValueThree = () => {
-    //     setValueThree(prevValue => prevValue + 1);
-    // }
-
-    // const lowerValueThree = () => {
-    //     setValueThree(prevValue => Math.max(0, prevValue - 1));
-    // }
 
     const {
         valueOne,
@@ -46,34 +18,61 @@ function Diners(){
         lowerValueThree,
     } = useDinersContext();
 
+    const lowerValueOneHandler = () => {
+        if (valueOne > 1) { 
+            lowerValueOne();
+        }
+    }
+    
+    const lowerValueTwoHandler = () => {
+        if (valueTwo > 1) { 
+            lowerValueTwo();
+        }
+    }
+    
+    const lowerValueThreeHandler = () => {
+        if (valueThree > 1) { 
+            lowerValueThree();
+        }
+    }
+
+
 const Bookcon = () => {
     console.log('Book Now Worked')
 }
+const Navigate = useNavigate();
+const bookNowClick = () => {
+    Navigate('/BookNow')
+}
+
+const [isDateSelected, setIsDateSelected] = useState(false);
+const [isTimeSelected, setIsTimeSelected] = useState(false);
+
+const handleDateChange = (date) => {
+    setIsDateSelected(true);
+    
+}
+
+const handleTimeChange = (time) => {
+    setIsTimeSelected(true)
+    
+}
+
     return(
         <>
-        <h1 className="diners">NUMBERS OF DINERS</h1>
-        <h1 className="adults">ADULTS</h1>
+        <h1 className="diners">NUMBERS OF PEOPLE</h1>
         <div className="dinerSlid">
-        <button className="MinusOne" onClick={lowerValueOne}>-</button>
+        <button className="MinusOne" onClick={lowerValueOneHandler}>-</button>
         <span className="ValueOne">{valueOne}</span>
         <button className="PlusOne" onClick={raiseValueOne}>+</button>
         </div>
-        <hr className='lineSeven'></hr>
-        <div className="dinerSlidTwo">
-        <button className="MinusOne" onClick={lowerValueTwo}>-</button>
-        <span className="ValueOne">{valueTwo}</span>
-        <button className="PlusOne" onClick={raiseValueTwo}>+</button>
-        </div>
-        <hr className='lineEight'></hr>
-        <h1 className="tod">TEENS</h1>
-        <div className="dinerSlidThree">
-        <button className="MinusOne" onClick={lowerValueThree}>-</button>
-        <span className="ValueOne">{valueThree}</span>
-        <button className="PlusOne" onClick={raiseValueThree}>+</button>
-        </div>
-        <hr className='lineNine'></hr>
-        <h1 className="babies">KIDS</h1>
-        <button className="SubmitOne" onClick={Bookcon}>Book Now</button>
+        <button className="SubmitOne" onClick={bookNowClick} disabled={!isDateSelected && !isTimeSelected}>Book Now</button>
+        <Dates  
+        onDateChange={handleDateChange} 
+        onTimeChange={handleTimeChange} 
+        setIsDateSelected={setIsDateSelected}
+        setIsTimeSelected={setIsTimeSelected}
+        />
         </>
     )
 }

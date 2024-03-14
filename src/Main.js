@@ -6,7 +6,8 @@ function Main() {
 
     return(
         <div className='Main'>
-        <h1 className='devliv'>ORDER FOR DELIVERY!</h1>
+        <h1 className='devliv'>Specials</h1>
+        <button className='OnlineMenbut'>Online Menu</button>
         </div>
     )
 }

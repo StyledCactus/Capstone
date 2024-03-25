@@ -1,6 +1,7 @@
 import resturant from './images/restaurant.png'
 
 function FooterNow() {
+    
 
 return(
     <>

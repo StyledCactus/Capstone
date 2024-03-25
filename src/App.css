@@ -1,12 +1,14 @@
+#root{
+  height: 0px;
+}
+
 .App {
   text-align: center;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -14,6 +16,8 @@
 }
 body{
   overflow-x: hidden;
+  left: 200px;
+  position: relative;
 }
 .App-header {
   background-color: #282c34;
@@ -25,17 +29,16 @@ body{
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
 .App-link {
   color: #61dafb;
 }
-
 .header{
   background-color: white;
   padding: 40px 40px;
   position: relative;
   width: 96%;
   height: 20px;
+  right: 160px;
 }
 .HeaderLinks{
   position: relative;
@@ -55,7 +58,6 @@ body{
   position: relative;
   left: 60px;
 }
-
 .ReservationLink{
   position: relative;
   left: 80px;
@@ -78,15 +80,26 @@ body{
   background: none;
   padding: none;
 }
+.navFill{
+  background-color: rgb(49, 80, 68);
+  padding: 2% 2%;
+  width: 100%;
+  right: 300px;
+  bottom: 45px;
+  position: relative;
+  height: 291px;
+  border: none;
+}
 .Nav{
   background-color: rgb(49, 80, 68);
   padding: 2% 2%;
-  width: 96%;
+  width: 100%;
   height: 290px;
 }
 .NavContent{
   position: relative;
-  left: 510px;
+  left: 370px;
+  bottom: 370px;
 }
 .name{
   position: relative;
@@ -113,7 +126,7 @@ body{
   background-color: rgb(243, 209, 15);
   width: 190px;
   height: 60px;
-  bottom: 20px;
+  bottom: 40px;
   border-radius: 20px;
   font-weight: bold;
   font-size: 15px;
@@ -122,17 +135,45 @@ body{
 }
 .firstImg{
 position: relative;
-width: 325px;
-bottom: 330px;
-left: 870px;
-height: auto;
+width: 300px;
+bottom: 680px;
+left: 750px;
 overflow: hidden;
 border-radius: 20px;
 }
 .devliv{
-  left: 550px;
-  top: 520px;
-  position: absolute;
+  left: 350px;
+  top: 60px;
+  position: relative;
+  width: 200px;
+  z-index: 11;
+}
+.ordDelivOne{
+  border: none;
+  background-color: rgb(236, 236, 236);
+  background-color: none;
+  font-weight: bold;
+  position: relative;
+  left: 17px;
+  bottom: 25px;
+}
+.ordDelivTwo{
+  border: none;
+  background-color: rgb(236, 236, 236);
+  background-color: none;
+  font-weight: bold;
+  position: relative;
+  left: 17px;
+  bottom: 70px;
+}
+.ordDelivThree{
+  border: none;
+  background-color: rgb(236, 236, 236);
+  background-color: none;
+  font-weight: bold;
+  position: relative;
+  left: 17px;
+  bottom: 30px;
 }
 .OnlineMenbut{
   background-color: rgb(243, 209, 15);
@@ -142,17 +183,9 @@ border-radius: 20px;
   height: 60px;
   font-weight: bold;
   font-size: 15px;
-  left: 1035px;
-  top: 70px;
+  left: 935px;
+  bottom: 10px;
   position: relative;
-}
-.mainbut{
-  top: 46%;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  width: 50%;
-  left: 10%;
 }
 .main{
   background-color: rgb(223, 223, 223);
@@ -185,7 +218,7 @@ border-radius: 20px;
   position: relative;
 }
 .Salad{
-  background-color: rgb(216, 216, 216);
+  background-color: rgb(236, 236, 236);
   width: fit-content;
   position: relative;
   width: 240px;
@@ -193,11 +226,17 @@ border-radius: 20px;
   top: 73px;
   border-radius: 20px;
 }
+.SpecialCont{
+  right: 200px;
+  bottom: 50px;
+  height: 1100px;
+  position: relative;
+}
 .SaladNm{
   font-weight: bold;
   position: relative;
-  top: 170px;
-  left: 10px;
+  top: 178px;
+  left: 20px;
   font-size: 18px;
 }
 .SaladDesc{
@@ -205,7 +244,7 @@ border-radius: 20px;
   position: relative;
   top: 170px;
   color: rgb(0, 80, 0);
-  left: 0px;
+  left: 20px;
   width: 200px;
 }
 .SaladImg{
@@ -218,207 +257,363 @@ border-radius: 20px;
 .SaladPrice{
   position: relative;
   font-weight: bold;
-  bottom: 364px;
+  bottom: 357px;
   color: rgb(223, 151, 103);
-  left: 160px;
+  left: 150px;
   font-size: 20px;
-}
-.line{
-  width: 95%;
-  height: 2px;
-  background-color: rgb(192, 192, 192);
-  margin: 20px 0;
-  opacity: 0.5;
-  bottom: 18%;
-  left: 2%;
-  position: absolute;
+  width: 200px;
 }
 .brushBase{
-  background-color: rgb(216, 216, 216);
+  background-color: rgb(236, 236, 236);
   position: relative;
-  left: 200px;
+  left: 820px;
+  bottom: 530px;
+  width: fit-content;
+  border-radius: 20px;
+  height: 589px;
 }
 .brushNm{
-  position: absolute;
-  bottom: 12%;
-  left: 45px;
+  position: relative;
+  top: 170px;
+  font-size: 18px;
+  left: 20px;
 }
 .brushDesc{
   font-weight: normal;
-  position: absolute;
-  top: 835px;
+  position: relative;
+  top: 165px;
   color: rgb(0, 80, 0);
-  width: 70%;
-  left: 45px;
+  width: 200px;
+  left: 20px;
 }
 .brushImg{
-  top: 789px;
-  position: absolute;
-  width: 12%;
-  left: 80%;
+  bottom: 394px;
+  position: relative;
+  width: 240px;
+  height: 162px;
+  border-radius: 20px;
 }
 .brushPrice{
-  position: absolute;
+  position: relative;
   font-weight: bold;
-  top: 960px;
-  color: rgb(0, 80, 0);
-  left: 45px;
+  bottom: 398px;
+  color: rgb(233, 170, 75);
+  left: 155px;
+  font-size: 20px;
 }
-.lineTwo{
-  width: 95%;
-  height: 2px;
-  background-color: rgb(192, 192, 192);
-  margin: 20px 0;
-  opacity: 0.5;
-  top: 1007px;
-  left: 2%;
-  position: absolute;
-}
-.GrilledFishNm{
-  position: absolute;
-  top: 108%;
-  left: 45px;
-}
-.GrilledFishDesc{
-  font-weight: normal;
-  position: absolute;
-  top: 1097px;
-  color: rgb(0, 80, 0);
-  width: 70%;
-  left: 45px;
-}
-.GrilledFishPrice{
-  position: absolute;
-  font-weight: bold;
-  top: 126%;
-  color: rgb(0, 80, 0);
-  left: 45px;
-}
-.lineThree{
-  width: 95%;
-  height: 2px;
-  background-color: rgb(192, 192, 192);
-  margin: 20px 0;
-  opacity: 0.5;
-  top: 1267px;
-  left: 2%;
-  position: absolute;
-}
-.GrilledFishImg{
-  top: 1050px;
-  position: absolute;
-  width: 12%;
-  left: 80%;
-}
-.PastaNm{
-  position: absolute;
-  top: 1299px;
-  left: 45px;
-}
-.PastaDesc{
-  font-weight: normal;
-  position: absolute;
-  top: 1350px;
-  color: rgb(0, 80, 0);
-  width: 70%;
-  left: 45px;
-}
-.PastaImg{
-  top: 1310px;
-  position: absolute;
-  width: 12%;
-  left: 80%;
-}
-.PastaPrice{
-  position: absolute;
-  font-weight: bold;
-  top: 1470px;
-  color: rgb(0, 80, 0);
-  left: 45px;
-}
-.lineFour{
-  width: 95%;
-  height: 2px;
-  background-color: rgb(192, 192, 192);
-  margin: 20px 0;
-  opacity: 0.5;
-  top: 1535px;
-  left: 2%;
-  position: absolute;
+.Lemondiv{
+  position: relative;
+  background-color: rgb(236, 236, 236);
+  width: fit-content;
+  left: 1090px;
+  bottom: 1140px;
+  height: 600px;
+  border-radius: 20px;
 }
 .LemonNm{
-  position: absolute;
-  left: 45px;
-  top: 1570px;
+  position: relative;
+  left: 20px;
+  top: 180px;
+  font-size: 18px;
 }
 .LemonDesc{
   font-weight: normal;
-  position: absolute;
-  top: 1620px;
+  position: relative;
+  top: 175px;
   color: rgb(0, 80, 0);
-  width: 70%;
-  left: 45px;
+  width: 200px;
+  left: 20px;
 }
 .LemonPrice{
-  position: absolute;
+  position: relative;
   font-weight: bold;
-  top: 1750px;
-  color: rgb(0, 80, 0);
-  left: 45px;
+  bottom: 359px;
+  color: rgb(233, 170, 75);
+  left: 165px;
+  font-size: 20px;
 }
 .LemonImg{
-  top: 1582px;
-  position: absolute;
-  width: 12%;
-  left: 80%;
-}
-.lineFive{
-  width: 95%;
-  height: 2px;
-  background-color: rgb(192, 192, 192);
-  margin: 20px 0;
-  opacity: 0.5;
-  top: 187%;
-  left: 2%;
-  position: absolute;
-}
-.overlay{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.5);
-  z-index: 4;
-}
-.cart{
-  position: fixed;
-  background-color: rgb(255, 255, 255);
-  right: 0%;
-  z-index: 5;
-  height: 2000%;
-  width: 15%;
-  top: 0%;
-  border: 1px solid black;
-}
-.headerCart{
-  background-color: rgb(0, 80, 0);
+  bottom: 354px;
   position: relative;
-  width: 100%;
-  height: .3%;
+  width: 239px;
+  height: 163px;
+  left: 0px;
+  border-radius: 18px;
 }
-.cartText{
+.pubfed{
+  left: 620px;
+  position: relative;
+  top: 50px;
+}
+.testFill{
+  background-color: rgb(255, 234, 194);
+  position: relative;
+  bottom: 1100px;
+  width: 1000px;
+  height: 798px;
+  right: 1100px;
+  bottom: 278px;
+}
+.Tesimdiv{
+  background-color: rgb(255, 234, 194);
+  position: relative;
+  bottom: 1100px;
+  height: 800px;
+}
+
+.containedallrev{
+  position: relative;
+  top: 80px;
+  left: 120px;
+}
+.containedRev{
+  top: 60px;
+  position: relative;
+}
+.FirstRev{
+  background-color: white;
+  width: 250px;
+  height: 450px;
+  position: relative;
+  left: 80px;
+  border-radius: 20px;
+}
+.FirstRevStar{
+  position: relative;
+  left: 50px;
+  bottom: 25px;
+  font-weight: normal;
+  font-size: 25px;
+}
+.FirstNamed{
+  position: relative;
+  left: 140px;
+  bottom: 100px;
+}
+.PretGoodRev{
+  width: 80px;
+  position: relative;
+  left: 40px;
+  bottom: 21px;
+  border-radius: 200px;
+}
+.FirstCom{
+  bottom: 55px;
+  left: 9px;
+  width: 240px;
+  position: relative;
+}
+.SecondRev{
+  background-color: white;
+  width: 250px;
+  height: 450px;
+  position: relative;
+  left: 350px;
+  bottom: 465px;
+  border-radius: 20px;
+}
+.shrekrev{
+  width: 80px;
+  position: relative;
+  left: 40px;
+  bottom: 21px;
+  border-radius: 200px;
+}
+.ThirdRev{
+  background-color: white;
+  width: 250px;
+  height: 450px;
+  position: relative;
+  left: 620px;
+  bottom: 939px;
+  border-radius: 20px;
+}
+.Sansrev{
+  width: 80px;
+  position: relative;
+  left: 40px;
+  bottom: 21px;
+  border-radius: 200px;
+}
+.ForthRev{
+  background-color: white;
+  width: 250px;
+  height: 450px;
+  position: relative;
+  left: 892px;
+  bottom: 1413px;
+  border-radius: 20px;
+}
+.FifthRev{
+  background-color: white;
+  width: 250px;
+  height: 450px;
+  position: relative;
+  left: 1170px;
+  bottom: 1886px;
+  border-radius: 20px;
+}
+.aboutsdiv{
+  position: relative;
+  height: inherit;
+}
+.aboutsContain{
+  position: relative;
+  bottom: 850px;
+  height: 1px;
+}
+.aboutlm{
+  color: rgb(73, 94, 87);
+  font-size: 40px;
+  position: relative;
+  left: 300px;
+}
+.aboutchic{
+  color: rgb(238, 154, 114);
+  position: relative;
+  left: 300px;
+  font-weight: normal;
+}
+.aboutdescone{
+  color: rgb(0, 114, 0);
+  top: 20px;
+  position: relative;
+  left: 300px;
+  width: 200px;
+  font-weight: normal;
+}
+.aboutdesctwo{
+  color: rgb(0, 114, 0);
+  position: relative;
+  left: 300px;
+  top: 40px;
+  width: 200px;
+  font-weight: normal;
+}
+.MarioAdone{
+  width: 250px;
+  bottom: 450px;
+  left: 740px;
+  z-index: 2;
+  position: relative;
+}
+.MarioAdtwo{
+  width: 250px;
+  left: 600px;
+  position: relative;
+  bottom:400px;
+}
+.footercred{
+  background-color: rgb(59, 102, 78);
+  right: 200px;
+  position: relative;
+  height: 600px;
+}
+.footercredbook{
+  background-color: rgb(59, 102, 78);
+  right: 200px;
+  position: relative;
+  height: 600px;
+  top: 100px;
+}
+.footcontained{
+  left: 90px;
+  position: relative;
+  height: 0px;
+}
+.footimg{
+  width: 130px;
+  top: 50px;
+  left: 300px;
+  border-radius: 9px;
+  position: relative;
+}
+.firstcred{
+  position: relative;
+  left: 550px;
+  bottom: 240px;
   color: white;
-  bottom: 1%;
-  left: 40%;
-  position: absolute;
 }
-.CartBasket{
-  left: 26%;
-  bottom: 40%;
-  position: absolute;
-  width: 12%;
-  height: 60%;
+.homecred, .menucred, .reservcred, .ordercred, .logcred{
+  font-weight: normal;
+}
+.menucred{
+  position: relative;
+  top: 30px;
+  right: 43px;
+}
+.reservcred{
+  position: relative;
+    top: 60px;
+    right: 83.3px;
+}
+.ordercred{
+  position: relative;
+  top: 90px;
+  right: 171px;
+}
+.logcred{
+  position: relative;
+  top: 120px;
+  right: 262px;
+}
+.secondcred{
+  left: 850px;
+  position: relative;
+  bottom: 343px;
+  width: 500px;
+  color: white;
+}
+.locacred{
+  font-weight: normal;
+  width: 245px;
+  font-size: 20px;
+}
+.numcred{
+  position: relative;
+  top: 5px;
+}
+.emcred{
+  position: relative;
+  top: 40px;
+  right: 126px;
+}
+.thirdcred{
+  position: relative;
+  left: 1200px;
+  bottom: 540px;
+  color: white;
+}
+.instacred{
+  position: relative;
+  right: 66.5px;
+  top: 30px;
+}
+.twitcred{
+  position: relative;
+  right: 136px;
+  top: 60px;
+}
+.botcred{
+  bottom: 300px;
+  left: 650px;
+  position: relative;
+  color: white;
+}
+.botcredone{
+  font-weight: normal;
+}
+.botcredtwo{
+  position: relative;
+  right: 80px;
+  font-weight: normal;
+}
+
+/* booking.js */
+
+.quickfix{
+  top: 130px;
+  position: relative;
 }
 .BookNav{
   background-color: rgb(59, 102, 78);
@@ -426,6 +621,7 @@ border-radius: 20px;
   padding: 2% 2%;
   width: 96%;
   position: relative;
+  right: 200px;
   top: 100px;
 }
 .nameTwo{
@@ -441,7 +637,7 @@ border-radius: 20px;
 .ReserveTxt{
   top: 373px;
   left: 100px;
-  position: absolute;
+  position: relative;
 }
 .lineSix{
   width: 95%;
@@ -451,56 +647,76 @@ border-radius: 20px;
   opacity: 0.5;
   top: 450px;
   left: 2%;
-  position: absolute;
+  position: relative;
 }
 .Date{
-  top: 54%;
-  left: 27%;
-  position: absolute;
+  bottom: 240px;
+  left: 500px;
+  position: relative;
   font-weight: normal;
 }
 .DateBut{
-  position: absolute;
-  border-radius: 20px;
-  background-color: rgb(201, 201, 201);
-  width: 300px;
-  height: 40px;
-  top: 350px;
+  position: relative;
+  border-radius: 5px;
+  background-color: rgb(237, 239, 238);
+  width: 500px;
+  height: 90px;
+  bottom: 250px;
   left: 27%;
   font-size: 30px;
+  border: none;
 }
 .TimeOne{
-  position: absolute;
-  border-radius: 20px;
-  background-color: rgb(201, 201, 201);
-  width: 300px;
-  height: 40px;
-  top: 329px;
-  left: 54%;
+  position: relative;
+  border-radius: 5px;
+  background-color: rgb(237, 239, 238);
+  width: 500px;
+  height: 90px;
+  bottom: 250px;
+  left: 27%;
   font-size: 30px;
+  border: none;
+  z-index: 2;
 }
 .TimeTwo{
   border-radius: 29px;
-  position: absolute;
+  position: relative;
   top: 705px;
   left: 950px;
   width: 510px;
   height: 40px;
 }
 .Time{
-  top: 54%;
-  left: 54%;
-  position: absolute;
+  bottom: 239px;
+  left: 500px;
+  position: relative;
   font-weight: normal;
 }
 .diners{
-  top: 750px;
+  bottom: 280px;
+  z-index: 2;
   left: 500px;
-  position: absolute;
+  position: relative;
   font-weight: normal;
 }
+.datecontain{
+  bottom: 39px;
+  position: relative;
+}
+.dinerscontain{
+  top: 40px;
+  position: relative;
+}
+.datecontain, .Timecontain, .dinerscontain{
+  position: relative;
+  top: 100px;
+}
+.Timecontain{
+  position: relative;
+  top: 80px;
+}
 .adults{
-  position: absolute;
+  position: relative;
   top: 750px;
   font-weight: normal;
   left: 400px;
@@ -513,529 +729,474 @@ border-radius: 20px;
   opacity: 0.5;
   top: 830px;
   left: 2%;
-  position: absolute;
+  position: relative;
 }
 .tod{
-  position: absolute;
+  position: relative;
   top: 876px;
   font-weight: normal;
   left: 410px;
 }
-
 .dinerSlid{
-  background-color: rgb(192, 192, 192);;
-  top: 755px;
-  left: 52%;
-  width: 20%;
-  height: 7%;
-  border-radius: 15px;
-  position: absolute;
+  position: relative;
+  border-radius: 5px;
+  background-color: rgb(237, 239, 238);
+  width: 500px;
+  height: 90px;
+  bottom: 280px;
+  left: 27%;
+  font-size: 30px;
+  border: none;
 }
 .MinusOne{
-  top: 15%;
+  bottom: 5px;
   left: 13%;
   width: 20%;
   height: 70%;
-  position: absolute;
+  position: relative;
+  z-index: 2;
 }
 .ValueOne{
-  position: absolute;
+  position: relative;
   font-size: 50px;
-  left: 45%;
+  left: 130px;
+  top: 10px;
   margin: auto;
   place-items: center;
 }
 .PlusOne{
-  top: 15%;
-  left: 65%;
+  bottom: 5px;
+  left: 200px;
   width: 20%;
   height: 70%;
-  position: absolute;
+  position: relative;
+  z-index: 2;
 }
-.lineEight{
-  width: 95%;
-  height: 2px;
-  background-color: rgb(192, 192, 192);
-  margin: 20px 0;
-  opacity: 0.5;
-  top: 963px;
-  left: 2%;
-  position: absolute;
-}
-.dinerSlidTwo{
-  background-color: rgb(192, 192, 192);;
-  top: 884px;
-  left: 52%;
-  width: 20%;
-  height: 7%;
-  border-radius: 15px;
-  position: absolute;
-}
-.babies{
-  position: absolute;
-  top: 1010px;
-  font-weight: normal;
-  left: 420px;
-}
-.todSlid{
-  top: 1141px;
-  left: 52%;
-  width: 20%;
-  height: 4%;
-  border-radius: 20px;
-  position: absolute;
-}
-.lineNine{
-  width: 95%;
-  height: 2px;
-  background-color: rgb(192, 192, 192);
-  margin: 20px 0;
-  opacity: 0.5;
-  top: 1101px;
-  left: 2%;
-  position: absolute;
-}
-.dinerSlidThree{
-  background-color: rgb(192, 192, 192);;
-  top: 1020px;
-  left: 52%;
-  width: 20%;
-  height: 7%;
-  border-radius: 15px;
-  position: absolute;
-}
-.babieSlid{
-  top: 1255px;
-  left: 52%;
-  width: 20%;
-  height: 4%;
-  border-radius: 20px;
-  position: absolute;
-}
-.SubmitOne{
-  top: 905px;
-  left: 24%;
-  background-color: yellow;
-  width: 50%;
-  height: 10%;
-  border-radius: 20px;
-  position: absolute;
-  font-weight: normal;
-  font-size: 40px;
-}
-.BOTTEMLINEapp{
-  width: 95%;
-  height: 2px;
-  background-color: rgb(192, 192, 192);
-  margin: 20px 0;
+.BOOKEDNOW{
+  position: relative;
+  left: 600px;
+  top: 40px;
   opacity: 0;
-  top: 1901px;
-  left: 2%;
-  position: absolute;
-}
-.BOTTEMLINEbook{
-  width: 95%;
-  height: 2px;
-  background-color: rgb(192, 192, 192);
-  margin: 20px 0;
-  opacity: 0;
-  top: 1051px;
-  left: 2%;
-  position: absolute;
-}
-.Basketbook{
-  height: 80%;
-  position: absolute;
-  left: 95%;
-  top: 10%;
-  height: 80%;
-}
-.Lemonbook{
-  height: 50px;
-  position: absolute;
-  left: 43%;
-  top: 20%
-}
-.Menubook{
-  width : 3%;
-  height: 100%;
-  position: absolute;
-  left: 1%;
-  top: 5%
-}
-.AdultinCart{
-  left: 0px;
-  top: 0px;
-  background-color: rgb(224, 224, 224);
-  position: relative;
-  width: 63%;
-  font-size: 40px;
-}
-.TodinCart{
-  left: 0px;
-  top: 0px;
-  background-color: rgb(224, 224, 224);
-  position: relative;
-  width: 50%;
-  font-size: 40px;
-}
-.BabieinCart{
-  left: 0px;
-  top: 0px;
-  background-color: rgb(224, 224, 224);
-  position: relative;
-  width: 40%;
-  font-size: 40px;
-}
-.reserveDown{
-  top: 1860px;
-  left: 40%;
-  background-color: yellow;
-  width: 20%;
-  height: 4%;
-  border-radius: 20px;
-  position: absolute;
-  font-weight: bold;
-}
-.reserveDown-text{
-  color: black;
-}
-.testbutton{
-  z-index: 11;
-  position: relative;
-}
-.FirstName{
-  position: absolute;
-  border-radius: 20px;
-  background-color: rgb(201, 201, 201);
-  width: 300px;
-  height: 40px;
-  top: 63%;
-  left: 27%;
-  font-size: 30px;
-}
-.FirstNmText{
-  top: 54%;
-  left: 27%;
-  position: absolute;
-  font-weight: normal;
-}
-.LastName{
-  position: absolute;
-  border-radius: 50px;
-  background-color: rgb(201, 201, 201);
-  width: 300px;
-  height: 40px;
-  top: 63%;
-  left: 54%;
-  font-size: 30px;
-}
-.LastNmText{
-  top: 54%;
-  left: 54%;
-  position: absolute;
-  font-weight: normal;
-}
-.EmailText{
-  top: 74%;
-  left: 27%;
-  position: absolute;
-  font-weight: normal;
-}
-.EmailName{
-  position: absolute;
-  border-radius: 50px;
-  background-color: rgb(201, 201, 201);
-  width: 800px;
-  height: 40px;
-  top: 83%;
-  left: 27%;
-  font-size: 30px;
-}
-.noteText{
-  top: 94%;
-  left: 27%;
-  position: absolute;
-  font-weight: normal;
-}
-.noteName{
-  position: absolute;
-  border-radius: 10px;
-  background-color: rgb(201, 201, 201);
-  width: 800px;
-  height: 350px;
-  top: 103%;
-  left: 27%;
-  font-size: 30px;
-}
-.submitBut{
-  top: 150%;
-  left: 40%;
-  position: absolute;
-  border-radius: 20px;
-  background-color: yellow;
-  width: 20%;
-  height: 5%;
-  font-size: 30px;
-}
-.sucbox{
-  position: absolute;
-  background-color: rgb(202, 202, 202);
-  z-index: 12;
-  border-radius: 20px;
-  top: 10%;
-  left: 33%;
-  height: 700px;
-  width: 600px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
-}
-.resSuc{
-  position: relative;
-  font-size: 60px;
-  text-align: center;
-}
-.MonAProved{
-  position: relative;
-  left: 180px;
-  height: 250px;
 
-}
-.byor{
+font-size: 50px;}
+.SubmitOne{
   position: relative;
-  background-color: yellow;
+  bottom: 610px;
+  left: 500px;
+  background-color: rgb(244, 206, 20);
+  width: 500px;
+  height: 80px;
   border-radius: 20px;
-  height: 100px;
-  width: 300px;
-  top: 110px;
-  right: 100px;
-  font-size: 50px;
+  font-weight: normal;
+  font-size: 40px;
+  border: none;
+}
+.Ocassion{
+  position: relative;
+  bottom: 285px;
+  left: 505px;
+  font-weight: normal;
+}
+.Occsel{
+  position: relative;
+  left: 27%;
+  bottom: 280px;
+  width: 500px;
+  height: 90px;
+  border: none;
+  background-color: rgb(237, 239, 238);
+  border-radius: 5px;
+  font-size: 30px;
+}
+/* BookNow.js */
+
+.nowcontentcont{
+  position: relative;
+  top: 50px;
+}
+.Reservedd{
+  position: relative;
+  left: 500px;
+}
+.sees{
+  position: relative;
+  left: 650px;
+  top: 15px;
+  font-weight: normal;
+}
+.Reserveddbox{
+  background-color: rgb(73, 94, 87);;
+  position: relative;
+  left: 540px;
+  top: 80px;
+  width: 400px;
+  border-radius: 20px;
+  height: 300px;
+  z-index: 2;
+}
+.condet{
+  color: rgb(244, 206, 20);
+  font-weight: normal;
+}
+.comcont{
+  left: 35px;
+  top: 15px;
+  font-size: 20px;
+  position: relative;
+}
+.occ, .gu, .dat, .tim{
+  color: white;
+}
+.bacbut{
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(244, 206, 20);
+  width: 400px;
+  height: 70px;
   font-weight: bold;
-  border-color: yellow;
+  font-size: 20px;
+  top: 140px;
+  left: 540px;
+  position: relative;
 }
-.blurs{
-  filter: blur(10px);
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-  z-index: 11;
-  top: 0;
-  left: 0;
-}
-.BOTTEMLINEnow{
-  width: 95%;
-  height: 2px;
-  background-color: rgb(192, 192, 192);
-  margin: 20px 0;
-  opacity: 0;
-  top: 1500px;
-  left: 2%;
-  position: absolute;
+.footercrednow{
+  background-color: rgb(59, 102, 78);
+  right: 200px;
+  position: relative;
+  height: 600px;
+  top: 200px;
 }
 @media (max-width: 768px) {
-  .firstImg{
-    bottom: 57%;
-    left: 61%;
+  body{
+    left: 40px;
+    width: 0px;
+    overflow-x: hidden;
   }
-  .Lemon{
-    left: 188px;
+  .header{
+    right: 570px;
+    bottom: 10px;
+    width: 590px;
   }
-  .Basket{
-    width: 40px;
-    left: 509px;
+  .navFill{
+    position: relative;
+    opacity: 0%;
   }
-  .Menu{
-    width: 30px;
-    height: 80px;
-    top: 1px;
+  .Nav{
+    right: 168px;
+    position: relative;
+    width: 897px;
+    height: 900px;
   }
-  .devliv{
-    top: 55%;
+  .NavContent{
+    top: 20px;
+    font-size: 20px;
+    width: 730px;
+    width: 200px;
   }
-  .mainbut{
-    bottom: 20%;
+  .name{
+    bottom: 350px;
+    font-size: 100px;
+    right: 130px;
+    width: 600px;
+  }
+  .chicago{
+    font-size: 70px;
+    bottom: 400px;
+    left: 40px;
+    width: 200px;
+  }
+  .desc{
+    bottom: 420px;
+    right: 90px;
+    text-align: center;
+    font-size: 30px;
+    width: 500px;
   }
   .reserve{
-    width: auto;
+    bottom: 400px;
+    left: 10px;
+    width: 300px;
+    height: 80px;
+    font-size: 30px;
+  }
+  .firstImg{
+    bottom: 320px;
+    left: 280px;
+    width: 500px;
+  }
+  .Main{
+    top: 300px;
+    font-size: 50px;
+    right: 200px;
+    position: relative;
+    z-index: 2;
+  }
+  .aboutlm{
+    width: 400px;
+  }
+  .OnlineMenbut{
+    top: 50px;
+    left: 390px;
+    font-size: 30px;
+    width: 300px;
+    height: 90px;
+  }
+  .AllSpecCont{
+    position: relative;
+    top: 600px;
+  }
+  .containedallrev{
+    width: 500px;
+  }
+  .AllSpecCont{
+    top: 365px;
+    right: 130px;
+  }
+  .Salad{
+    width: 350px;
+    left: 500px;
   }
   .SaladNm{
-    bottom: 23%;
-  }
-  .SaladDesc{
-    bottom: 4.8%;
-    width: 60%;
+    top: 260px;
   }
   .SaladPrice{
-    bottom: 0.01%;
+    bottom: 347px;
+    left: 250px;
+  }
+  .SaladDesc{
+    top: 260px;
+    width: 200px;
+    left: 75px;
+    text-align: center;
+  }
+  .aboutchic{
+    width: 200px;
+  }
+  .footcontained{
+    width: 200px;
   }
   .SaladImg{
-    bottom: 10%;
-    width: 25%;
-    left: 70%;
+    width: 350px;
   }
-  .line{
-    top: 97%;
-  }
-  .brushDesc{
-    top: 103%;
+  .brushBase{
+    top: 95px;
+    left: 500px;
+    width: 350px;
+    height: 720px;
   }
   .brushNm{
-    top: 99%;
+    top: 270px;
   }
   .brushPrice{
-    top: 133%;
+    bottom: 385px;
+    left: 255px;
+    width: 100px;
   }
-  .lineTwo{
-    top: 138%;
+  .brushDesc{
+    top: 280px;
+    text-align: center;
+    left: 70px;
   }
   .brushImg{
-    width: 25%;
-    left: 70%;
-    top: 113%;
+    width: 350px;
+    height: 250px;
   }
-  .GrilledFishNm{
-    top: 140%;
+  .ordDelivTwo{
+    bottom: 20px;
   }
-  .GrilledFishDesc{
-    top: 145%;
-  }
-  .lineThree{
-    top: 180%
-  }
-  .GrilledFishPrice{
-    top: 175%;
-  }
-  .GrilledFishImg{
-    width: 25%;
-    left: 70%;
-    top: 153%;
-  }
-  .PastaNm{
-    top: 182%;
-  }
-  .PastaDesc{
-    top: 188%;
-  }
-  .PastaImg{
-    width: 25%;
-    left: 70%;
-    top: 188%;
-  }
-  .lineFour{
-    top: 207%;
-  }
-  .PastaPrice{
-    top: 203%;
-  }
-  .LemonNm{
-    top: 209%;
-  }
-  .LemonDesc{
-    top: 214%;
+  .Lemondiv{
+    top: 120px;
+    left: 500px;
+    width: 350px;
   }
   .LemonImg{
-    width: 25%;
-    left: 70%;
-    top: 213.7%;
+    width: 350px;
+    height: 210px;
   }
-  .lineFive{
-    top: 231%;
+  .LemonNm{
+    top: 230px;
+  }
+  .LemonDesc{
+    top: 230px;
+    text-align: center;
+    left: 70px;
   }
   .LemonPrice{
-    top: 227%;
+    bottom: 354px;
+    left: 250px;
+    width: 200px;
   }
-  .BookNav{
-    position: absolute;
-    width: 96.5%;
-    height: 20%;
+  .ordDelivThree{
+    bottom: 60px;
   }
-  .Basketbook{
-    left: 77%;
-    width: 10%;
+  .testFill{
+    opacity: 0%;
   }
-  .Lemonbook{
-    left: 28%;
-    top: 30%;
+  .Tesimdiv{
+    top: 580px;
+    right: 40px;
+    height: 1650px;
+    width: 770px;
   }
-  .Menubook{
-    left: 3;
-    width: 10%;
+  .pubfed{
+    left: 265px;
+    width: 300px;
   }
-  .nameTwo{
-    font-size: 50px;
-    position: absolute;
-    top: 1%;
+  .FirstRev{
+    left: 140px;
   }
-  .bookNavDesc{
-    font-size: 30px;
-    top: 50%;
-    position: absolute;
+  .FirstRevStar{
+    left: 40px;
   }
-  .ReserveTxt{
-  top: 34.5%;
+  .SecondRev{
+    top: 20px;
+    left: 140px;
+    bottom: 20px;
   }
-  .lineSix{
-    top: 43%;
+  .ThirdRev{
+    top: 30px;
+    left: 140px;
+  }
+  .ForthRev{
+    top: 40px;
+    left: 140px;
+    opacity: 0;
+  }
+  .aboutsdiv{
+    top: 1450px;
+    right: 200px;
+  }
+  .MarioAdone{
+    left: 600px;
+    width: 200px;
+  }
+  .MarioAdtwo{
+    width: 200px;
+    left: 650px;
+    bottom: 610px;
+    z-index: 2;
+  }
+  .footercred{
+    top: 1200px;
+    width: 930px;
+    height: 750px;
+  }
+  .footimg{
+  opacity: 0;
+  }
+  .firstcred{
+    left: 200px;
+    width: 400px;
+  }
+  .secondcred{
+    left: 500px;
+    width: 320px;
+  }
+  .thirdcred{
+    left: 200px;
+    bottom: 280px;
+    width: 630px;
+  }
+  .socclas{
+    width: 200px;
+  }
+  .botcred{
+    bottom: 150px;
+    left: 250px;
+    width: 580px;
+  }
+  .botcredone{
+    width: 450px;
+  }
+  .lemfoot{
+    width: 230px;
+  }
+
+  /* Booking */
+
+  .quickfix{
+    width: 600px;
   }
   .Date{
-    top: 400px;
+    left: 350px;
+    width: 190px;
   }
   .DateBut{
-  top: 480px;
-  width: 30%;
+    left: 205px;
+  }
+  .datecontain{
+    right: 125px;
   }
   .Time{
-    top: 400px;
-    left: 280px;
+    left: 230px;
+    width: 190px;
   }
   .TimeOne{
-    left: 280px;
-    top: 460px;
-    width: 30%;
+    left: 85px;
+  }
+  .dinerSlid{
+    left: 85px;
   }
   .diners{
-    top: 600px;
-    left: 20px;
+    left: 190px;
+    width: 300px;
   }
-  .dinerSlid , .dinerSlidThree , .dinerSlidTwo{
-    left: 50px;
-    width: 50%;
+  .Occsel{
+    left: 85px;
   }
-  .ValueOne{
-    left: 44%;
-    bottom: -3px;
+  .Ocassion{
+    left: 260px;
+    width: 200px;
   }
-  .adults{
-    left: 69%;
+  .SubmitOne{
+    left: 85px;
+    bottom: 710px;
   }
-  .tod{
-    left: 66%;
+  .footercredbook{
+    width: 928px;
   }
-  .babies{
-    left: 70%;
+  .botcred{
+    bottom: 230px;
   }
-  .cart{
-    width: 50%;
-  }
-  .cartText{
-    top: -30px;
-    left: 93px;
-    font-size: 40px;
-  }
-  .CartBasket{
-    top: 10px;
-    left: 55px;
-  }
-  .closeButton{
-    top:0px;
-    position: absolute;
-    background-color: rgb(0, 80, 0);
-    outline: none;
-    border: blue;
-    width: 50px;
-    height: 50px;
-    font-size: 35px;
+  #root{
+    width: 20px;
   }
 
+  /*bookNow*/
+
+  .nowcontentcont{
+    position: relative;
+    right: 425px;
+  }
+  .Reservedd{
+    position: relative;
+    width: 300px;
+    text-align: center;
+    bottom: 70px;
+    left: 620px;
+  }
+  .sees{
+    width: 1px;
+    opacity: 0;
+  }
+  .Reserveddbox{
+    position: relative;
+    left: 150px;
+    top: -100px;
+  }
+  .bacbut{
+    left: 150px;
+    top: -40px;
+  }
+  .footercrednow{
+    z-index: 2;
+    width: 928px;
+    top: 20px;
+  }
+  .botcred{
+    bottom: 170px;
+  }
+  .footercredbook{
+    height: 700px;
+  }
 }
-

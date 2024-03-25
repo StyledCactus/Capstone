@@ -1,16 +1,18 @@
-import HeaderNow from "./HeaderNow";
-import NowNav from "./navNow";
-import Reservespot from "./Reservespot";
-import Names from "./Names";
+import Header from "./Header";
+import FooterNow from "./footerNow";
+import NowContent from "./NowContent";
+import { useState } from "react";
+import Dates from "./Date";
 
 function BookNow(){
+
+
+
     return(
         <>
-        <HeaderNow/>
-        <NowNav />
-        <Reservespot />
-        <Names />
-        <hr className='BOTTEMLINEnow'></hr>
+        <Header/>
+        <NowContent />
+        <FooterNow />
         </>
     )
 }

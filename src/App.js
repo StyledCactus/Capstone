@@ -8,6 +8,9 @@ import Booking from './Booking';
 import Reservesdown from './ReserveBottom';
 import BookNow from './BookNow';
 import BookDone from './BookDone';
+import Testimonials from './Testimonials';
+import Abouts from './About';
+import Footer from './footer';
 
 
 console.log("App working");
@@ -23,6 +26,9 @@ function App() {
         <Nav />
         <Main />
         <Specials />
+        <Testimonials />
+        <Abouts />
+        <Footer />
             </>
           } />
           <Route path='/Booking' element={<Booking />} />

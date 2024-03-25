@@ -29,15 +29,15 @@ function Headerbook() {
 
     return(
        <header className='header'>
-        <a href='' className='headerButtonOne'>
+        {/* <a href='' className='headerButtonOne'>
             <img className='Menubook' src= {Menu} alt="Menu Button"></img>
-        </a>
+        </a> */}
         <button className='headerButtonTwo' onClick={HomeClick}>
             <img className='Lemonbook' src = {Lemon} alt="Lemon Logo"></img>
         </button>
-        <a href='CartsShown' className='headerButtonThree' onClick={toggleCart}>
+        {/* <a href='CartsShown' className='headerButtonThree' onClick={toggleCart}>
             <img className='Basketbook' src = {Basket} alt ="Basket Icon"></img>
-        </a>
+        </a> */}
         {isShowCart && (
             <div>
             <div className='overlay' onClick={closeCart}></div>

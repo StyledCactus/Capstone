@@ -15,6 +15,7 @@ function Nav() {
 
     return(
         <div className='Nav'>
+            <hr className='navFill' />
             <div className='NavContent'>
                 <h1 className='name'>Little Lemon</h1>
                 <h2 className='chicago'>Chicago</h2>
